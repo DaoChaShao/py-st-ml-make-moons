@@ -5,12 +5,13 @@
 
 ### Features
 
+- implement data preparation settings and dataset generation in preparation.py ([a78543d](https://github.com///commit/a78543db939bf1aa2dbf185ae9afb2fea170b91f))
+- add CHANGELOG.md for version 0.1.0 with project features and updates ([d2312eb](https://github.com///commit/d2312ebf7d74eae46f0fda6bee2f20d1e28e868b))
 - integrate page configuration and page setter functions in main.py ([0c8fd1e](https://github.com///commit/0c8fd1e1688e8f7d0d2617e31acfa8b079fefdea))
 - add page configuration and sidebar navigation in layout.py ([f3f7be2](https://github.com///commit/f3f7be2eee166892ff8d77780d9df159936a5666))
 - add introduction section and informational message in home.py ([b87a493](https://github.com///commit/b87a49356ba5af5a92f69c20465f069a7dc0426e))
 - add data preprocessing and visualization functions in helper.py ([ace95a6](https://github.com///commit/ace95a6db200f15b11a4e534012081a2d4f319de))
 - add application information section in about.py with title and expander ([5b988d0](https://github.com///commit/5b988d0a01134e9fec44076bccfa1dea6e93812f))
-- add CHANGELOG.md for version 0.1.0 with project features and updates ([e46caec](https://github.com///commit/e46caec5e97c33ba3381bc36b4c9b0b9251f2d53))
 - add requirements.txt with necessary dependencies for the project ([56f40b3](https://github.com///commit/56f40b3d034ba14f00b94f01c695f2f7772f0996))
 - add Chinese README.md with application overview, setup instructions, privacy notice, and changelog guidelines ([800f251](https://github.com///commit/800f251cb5acce25147f619400ec8f33e09c27e9))
 - add README.md with project introduction, setup instructions, and privacy notice ([76158d3](https://github.com///commit/76158d3e0d15e76aedd5896d90df9ae26c5570d8))
