@@ -5,3 +5,12 @@
 # @Version  :   Version 0.1.0
 # @File     :   home.py
 # @Desc     :
+
+from streamlit import title, expander, caption, empty
+
+empty_message = empty()
+empty_message.info("Please check the details at the different pages of core functions.")
+
+title("ML - Make Moons")
+with expander("**INTRODUCTION**", expanded=True):
+    caption("+ ")
