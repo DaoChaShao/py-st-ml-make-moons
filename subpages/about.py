@@ -10,4 +10,7 @@ from streamlit import title, expander, caption
 
 title("**Application Information**")
 with expander("About this application", expanded=True):
-    caption("- ")
+    caption("- Provides interactive visualization of data, including scatter plots with predicted labels.")
+    caption("- Shows decision boundaries of the trained KNN model on 2D data.")
+    caption("- Displays performance metrics: R², Accuracy, Confusion Matrix, Precision, Recall, F1-Score.")
+    caption("- Allows resetting dataset, model, or neighbor search to start over.")
