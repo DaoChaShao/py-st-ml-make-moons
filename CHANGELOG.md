@@ -1,10 +1,14 @@
 <!-- insertion marker -->
 <a name="0.1.0"></a>
 
-## [0.1.0](https://github.com///compare/6814515bf35e87635039e12d2361e8f8eccb9125...0.1.0) (2025-09-13)
+## [0.1.0](https://github.com///compare/6814515bf35e87635039e12d2361e8f8eccb9125...0.1.0) (2025-09-14)
 
 ### Features
 
+- update layout to include new pages for anomaly detection and best neighbors finder ([fed0921](https://github.com///commit/fed0921061efeacd4e42bab4f3a04863b44ba37e))
+- add decision boundary visualization functionality in helper.py ([d79d85b](https://github.com///commit/d79d85b085a01ed88064d95af46e4fcf8ae47370))
+- add best neighbors finder functionality in finder.py ([49cd6c8](https://github.com///commit/49cd6c8af250fea48f2be280862822f4b252f039))
+- add anomaly detection and KNN model training functionality in anomaly.py ([cfbcf0b](https://github.com///commit/cfbcf0b1808d4363aff64846c0d55c624f00e443))
 - implement data preparation settings and dataset generation in preparation.py ([a78543d](https://github.com///commit/a78543db939bf1aa2dbf185ae9afb2fea170b91f))
 - add CHANGELOG.md for version 0.1.0 with project features and updates ([d2312eb](https://github.com///commit/d2312ebf7d74eae46f0fda6bee2f20d1e28e868b))
 - integrate page configuration and page setter functions in main.py ([0c8fd1e](https://github.com///commit/0c8fd1e1688e8f7d0d2617e31acfa8b079fefdea))
@@ -24,4 +28,8 @@
 - add about.py with metadata and initial structure ([a23f742](https://github.com///commit/a23f742f59b62d0635d3c3d6307a88bb114af290))
 - add __init__.py with main function template ([0806031](https://github.com///commit/080603150ec7f37f55fb197f52484cb921387773))
 - add .gitignore to exclude IDE and environment files ([cd258c4](https://github.com///commit/cd258c4d9995e400846325dfa9ca84fa0b7a2a0a))
+
+### Chore
+
+- update CHANGELOG.md to include recent features and updates ([dfc68aa](https://github.com///commit/dfc68aa537c9983b47982987b6a1dd01a87ceea7))
 
