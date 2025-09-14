@@ -13,4 +13,7 @@ empty_message.info("Please check the details at the different pages of core func
 
 title("ML - Make Moons")
 with expander("**INTRODUCTION**", expanded=True):
-    caption("+ ")
+    caption("+ This app allows you to generate 2D datasets such as moons dataset for classification tasks.")
+    caption("+ You can configure dataset parameters: number of samples, noise level, and whether to shuffle.")
+    caption("+ Train a K-Nearest Neighbors (KNN) model interactively with adjustable neighbors.")
+    caption("+ Find the optimal number of neighbors that maximizes training and testing accuracy.")
