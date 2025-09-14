@@ -6,8 +6,10 @@
 # @File     :   helper.py
 # @Desc     :
 
+from numpy import meshgrid, linspace, c_
 from pandas import DataFrame
 from plotly.express import scatter, scatter_3d
+from plotly.graph_objects import Contour
 from sklearn.compose import ColumnTransformer
 from sklearn.decomposition import PCA
 from sklearn.impute import SimpleImputer
@@ -165,3 +167,39 @@ def data_preprocessor(selected_data: DataFrame) -> tuple[DataFrame, StandardScal
 
     # Convert the processed data to a DataFrame
     return DataFrame(processed, columns=cols_names), preprocessor.named_transformers_["number"]["scaler"]
+
+
+def decision_boundary_adder(fig, model, X: DataFrame, pad_ratio: float = 0.05):
+    """ Add decision boundary to a scatter plot.
+    :param fig: the scatter plot figure
+    :param model: the trained model
+    :param X: the DataFrame containing the features used for training
+    :param pad_ratio: the ratio to pad the decision boundary
+    :return: the scatter plot figure with the decision boundary added
+    """
+    x_range = X.iloc[:, 0].max() - X.iloc[:, 0].min()
+    y_range = X.iloc[:, 1].max() - X.iloc[:, 1].min()
+
+    x_min = X.iloc[:, 0].min() - pad_ratio * x_range
+    x_max = X.iloc[:, 0].max() + pad_ratio * x_range
+    y_min = X.iloc[:, 1].min() - pad_ratio * y_range
+    y_max = X.iloc[:, 1].max() + pad_ratio * y_range
+
+    x = linspace(x_min, x_max, 100)
+    y = linspace(y_min, y_max, 100)
+    xx, yy = meshgrid(x, y)
+
+    Z = model.predict(c_[xx.ravel(), yy.ravel()])
+    Z = Z.reshape(xx.shape)
+
+    fig.add_trace(Contour(
+        x=x,
+        y=y,
+        z=Z,
+        showscale=False,
+        opacity=0.3,
+        colorscale=["rgba(0,0,255,0.3)", "rgba(255,0,0,0.3)"],
+        contours=dict(showlines=False),
+        name="Decision Boundary"
+    ))
+    return fig
