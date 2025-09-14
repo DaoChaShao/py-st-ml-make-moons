@@ -5,6 +5,10 @@
 
 ### Features
 
+- enhance README.zh-CN.md with interactive features and detailed functionality of the KNN application ([012f78f](https://github.com///commit/012f78f68a3e47c0bc2fb3f6e682536cff08399b))
+- enhance README.md with detailed app features and interactive capabilities ([996f87c](https://github.com///commit/996f87c2b0e6c0d90a6befe38ccd0a19210aaaf2))
+- update introduction in home.py with detailed app functionality and configuration options ([1b6539d](https://github.com///commit/1b6539d694c3448c857fb18425bf9a094c02983d))
+- enhance application information with detailed descriptions of features and functionalities ([14936fd](https://github.com///commit/14936fde6c4aa41859f73adcca332611c9f618ff))
 - update layout to include new pages for anomaly detection and best neighbors finder ([fed0921](https://github.com///commit/fed0921061efeacd4e42bab4f3a04863b44ba37e))
 - add decision boundary visualization functionality in helper.py ([d79d85b](https://github.com///commit/d79d85b085a01ed88064d95af46e4fcf8ae47370))
 - add best neighbors finder functionality in finder.py ([49cd6c8](https://github.com///commit/49cd6c8af250fea48f2be280862822f4b252f039))
@@ -31,5 +35,6 @@
 
 ### Chore
 
+- update CHANGELOG.md for version 0.1.0 with recent features and updates ([8768c65](https://github.com///commit/8768c65ef191c49cdb472c988b8b85b10815a910))
 - update CHANGELOG.md to include recent features and updates ([dfc68aa](https://github.com///commit/dfc68aa537c9983b47982987b6a1dd01a87ceea7))
 
