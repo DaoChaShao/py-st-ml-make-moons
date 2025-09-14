@@ -6,9 +6,24 @@
 **INTRODUCTION**
 ---
 This app uses the make_moons dataset, a two-class “moon-shaped” dataset often used for testing classification
-algorithms. It demonstrates how the K-Nearest Neighbors (KNN) classifier works. Users can adjust parameters such as the
-number of neighbors and noise level to see how the decision boundary changes and to better understand the behavior of
-KNN in non-linear classification tasks.
+algorithms. This Streamlit application allows you to explore and train K-Nearest Neighbors (KNN) classifiers
+interactively on 2D datasets (e.g., moons dataset). You can adjust dataset parameters, train the model, and find the
+optimal number of neighbors for classification performance. You can also adjust parameters such as the number of
+neighbors and noise level to see how the decision boundary changes and to better understand the behavior of KNN in
+non-linear classification tasks.
+
+**FEATURES**
+---
+
+- **Data Generation**: Generate synthetic 2D datasets such as the moons dataset with configurable number of samples,
+  noise, and shuffle options.
+- **KNN Model Training**: Train a KNN classifier with adjustable number of neighbors.
+- **Best Neighbors Finder**: Automatically search for the best number of neighbors that maximizes train and test
+  accuracy.
+- **Interactive Visualization**: Display train/test scatter plots with predicted labels and decision boundaries.
+- **Performance Metrics**: View R², Accuracy, Confusion Matrix, Precision, Recall, and F1-Score for the trained KNN
+  model.
+- **Reset Options**: Reset dataset, model, or neighbor search to start over.
 
 **WEB DEVELOPMENT**
 ---
